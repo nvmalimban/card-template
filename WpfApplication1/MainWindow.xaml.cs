@@ -28,7 +28,20 @@ namespace WpfApplication1
         void button_click(object sender, EventArgs e)
         {
             String buttonName = (sender as Button).Content.ToString();
-            theLabel.Content = "Last button pressed was: " + buttonName;
+
+
+            if (buttonName == "Nathan1")
+            {
+                theLabel.Content = "Malimban";
+            } else if (buttonName == "Chris")
+            {
+                theLabel.Content = "Chris";
+            } else
+            {
+                theLabel.Content = "Hillium";
+            }
         }
+
+            
     }
 }
